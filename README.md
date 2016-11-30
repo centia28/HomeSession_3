@@ -1,2 +1,2 @@
-# Homesession_1
-Boot Camp home session Day 1
+# Homesession_3
+Boot Camp home session Day 3
