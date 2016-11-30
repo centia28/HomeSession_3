@@ -1,0 +1,23 @@
+{
+  "name": "HomeSession_3",
+  "version": "1.0.0",
+  "description": "BootCamp day 3",
+  "main": "binarySearch.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test_search": "mocha tests/binarySearch.js",
+    "test_findMissing": "mocha tests/findMissing.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/centia28/HomeSession_3.git"
+  },
+  "author": "Nina Tchalla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/centia28/HomeSession_3/issues"
+  },
+  "homepage": "https://github.com/centia28/HomeSession_3#readme"
+}
