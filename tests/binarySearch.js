@@ -75,9 +75,9 @@ describe('Binary Search to traverse an ordered list, effectively', function() {
     });
 
 
-    it('should return {count: 4, index: 19} for 40', function() {
+    it('should return {count: 0, index: 19} for 40', function() {
       var search  = twoToForty.search(40);
-      expect(search.count).to.equal(4);
+      expect(search.count).to.equal(0);
       expect(search.index).to.equal(19);
     });
 

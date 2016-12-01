@@ -39,19 +39,25 @@ Array.prototype.search = function(num){
 	var found = false;
 	var cnt=0,ind=-1;
 
-	while (first<=last && !found) {
-		var midpoint = Math.floor((first+last)/2);
-		if(this[midpoint] == num){
-			found = true;
-			ind = midpoint;
-		} else {
-			if (num < this[midpoint]) {
-				last = midpoint - 1;
+	if(this[first] ==  num){
+		return {count:0,index:first,length:this.length};
+	} else if(this[last] ==  num) {
+		return {count:0,index:last,length:this.length};
+	} else {
+		while (first<=last && !found) {
+			var midpoint = Math.floor((first+last)/2);
+			if(this[midpoint] == num){
+				found = true;
+				ind = midpoint;
 			} else {
-				first = midpoint + 1
+				if (num < this[midpoint]) {
+					last = midpoint - 1;
+				} else {
+					first = midpoint + 1
+				}
+				cnt++;
 			}
-			cnt++;
 		}
+		return {count:cnt,index:ind,length:this.length};
 	}
-	return {count:cnt,index:ind,length:this.length};
 };
